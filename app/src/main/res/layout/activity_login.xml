@@ -7,12 +7,121 @@
     tools:context=".LoginActivity">
 
     <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/loginText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
+        android:fontFamily="@font/inter_extrabold"
         android:text="Login Page"
         android:textSize="45sp" />
 
+    <ImageView
+        android:id="@+id/docImage"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/loginText"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/doc" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/studentBranchHolder"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="60dp"
+        android:padding="10dp"
+        android:textColorHint="#545454"
+        app:boxCornerRadiusBottomEnd="15dp"
+        app:boxCornerRadiusBottomStart="15dp"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxCornerRadiusTopStart="15dp"
+        app:boxStrokeColor="#545454">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/studentBranch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/inter"
+            android:hint="Enter Email ID"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textColor="#545454"
+            android:textColorHint="#545454" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordHolder"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/studentBranchHolder"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:padding="10dp"
+        android:textColorHint="#545454"
+        app:boxCornerRadiusBottomEnd="15dp"
+        app:boxCornerRadiusBottomStart="15dp"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxCornerRadiusTopStart="15dp"
+        app:boxStrokeColor="#545454">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/inter"
+            android:hint="Enter Password"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textColor="#545454"
+            android:textColorHint="#545454" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/signupInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordHolder"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="100dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Not have an account?" />
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordHolder"
+        android:layout_alignRight="@+id/signupInformation"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#2962FF"
+        android:layout_marginRight="-75dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Click here!" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="75dp"
+android:layout_centerHorizontal="true"        android:backgroundTint="#6C63FF"
+        android:fontFamily="@font/inter_extrabold"
+        android:paddingHorizontal="50dp"
+        android:paddingVertical="15dp"
+        android:text="Submit"
+        android:layout_below="@id/passwordHolder"
+        android:textColor="#EAEAEA"
+        android:textSize="15dp"
+        app:cornerRadius="20dp" />
 
 </RelativeLayout>
