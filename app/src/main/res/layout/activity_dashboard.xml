@@ -48,7 +48,7 @@
             android:id="@+id/loginImage"
             android:layout_width="50dp"
             android:layout_height="60dp"
-            android:layout_marginLeft="300dp"
+            android:layout_marginLeft="315dp"
             android:src="@drawable/login" />
 
     </RelativeLayout>
