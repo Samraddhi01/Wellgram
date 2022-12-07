@@ -4,8 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DoctorActivity">
+    tools:context=".DoctorActivity"
+    tools:ignore="ExtraText">
 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/loginText"
         android:layout_width="wrap_content"
@@ -47,17 +50,35 @@
                     android:paddingVertical="15dp"
                     android:background="#BF6C63FF"
                     android:orientation="vertical">
+
                     <TextView
                         android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
                         android:text="Dr. Parinita Khot Jain"
-                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Gynaecologist, MBBS"
+                        android:textStyle="normal"
                         android:gravity="center"
                         android:textSize="20dp"
                         android:textColor="#000"
                         android:layout_height="wrap_content"/>
                     <TextView
                         android:layout_width="wrap_content"
-                        android:text="Cardiology Doctor"
+                        android:text="Contact:+919967793431"
+                        android:textStyle="normal"
+                        android:gravity="center"
+                        android:textSize="20dp"
+                        android:textColor="#000"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Address:Asha Jyoti, Gali Number 2, Mathur Colony, Guna, Madhya Pradesh - 473001"
                         android:textStyle="normal"
                         android:gravity="center"
                         android:textSize="20dp"
@@ -82,7 +103,7 @@
                     android:orientation="vertical">
                     <TextView
                         android:layout_width="wrap_content"
-                        android:text="Dr. Parinita Khot Jain"
+                        android:text="Dr. Subhash Kumar Sonkar"
                         android:textStyle="bold"
                         android:gravity="center"
                         android:textSize="20dp"
@@ -90,7 +111,23 @@
                         android:layout_height="wrap_content"/>
                     <TextView
                         android:layout_width="wrap_content"
-                        android:text="Cardiology Doctor"
+                        android:text="General Physician, MBBS"
+                        android:textStyle="normal"
+                        android:gravity="center"
+                        android:textSize="20dp"
+                        android:textColor="#000"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Contact:+919993844876"
+                        android:textStyle="normal"
+                        android:gravity="center"
+                        android:textSize="20dp"
+                        android:textColor="#000"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Address:Bhargava Colony, Soni Colony, Guna, Madhya Pradesh-473001"
                         android:textStyle="normal"
                         android:gravity="center"
                         android:textSize="20dp"
@@ -115,7 +152,7 @@
                     android:orientation="vertical">
                     <TextView
                         android:layout_width="wrap_content"
-                        android:text="Dr. Parinita Khot Jain"
+                        android:text="Dr. Mukesh Upadhyaya"
                         android:textStyle="bold"
                         android:gravity="center"
                         android:textSize="20dp"
@@ -123,7 +160,23 @@
                         android:layout_height="wrap_content"/>
                     <TextView
                         android:layout_width="wrap_content"
-                        android:text="Cardiology Doctor"
+                        android:text="General Medicine, MBBS"
+                        android:textStyle="normal"
+                        android:gravity="center"
+                        android:textSize="20dp"
+                        android:textColor="#000"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Contact:+917542227147"
+                        android:textStyle="normal"
+                        android:gravity="center"
+                        android:textSize="20dp"
+                        android:textColor="#000"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Address:Telephone Exchange Road, Nayapura, Guna-473001"
                         android:textStyle="normal"
                         android:gravity="center"
                         android:textSize="20dp"
@@ -148,7 +201,7 @@
                     android:orientation="vertical">
                     <TextView
                         android:layout_width="wrap_content"
-                        android:text="Dr. Parinita Khot Jain"
+                        android:text="Dr. Ankit R. Upadhyaya"
                         android:textStyle="bold"
                         android:gravity="center"
                         android:textSize="20dp"
@@ -156,7 +209,23 @@
                         android:layout_height="wrap_content"/>
                     <TextView
                         android:layout_width="wrap_content"
-                        android:text="Cardiology Doctor"
+                        android:text="Endodontist, BDS, MDS"
+                        android:textStyle="normal"
+                        android:gravity="center"
+                        android:textSize="20dp"
+                        android:textColor="#000"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Contact:+918989456473"
+                        android:textStyle="normal"
+                        android:gravity="center"
+                        android:textSize="20dp"
+                        android:textColor="#000"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Address:Opposite New telephone Exchange, Nayapura, Guina-473001"
                         android:textStyle="normal"
                         android:gravity="center"
                         android:textSize="20dp"
@@ -181,7 +250,7 @@
                     android:orientation="vertical">
                     <TextView
                         android:layout_width="wrap_content"
-                        android:text="Dr. Parinita Khot Jain"
+                        android:text="Dr. Vivek Choubey"
                         android:textStyle="bold"
                         android:gravity="center"
                         android:textSize="20dp"
@@ -189,7 +258,23 @@
                         android:layout_height="wrap_content"/>
                     <TextView
                         android:layout_width="wrap_content"
-                        android:text="Cardiology Doctor"
+                        android:text="Ayurvedic Practitioner, BAMS"
+                        android:textStyle="normal"
+                        android:gravity="center"
+                        android:textSize="20dp"
+                        android:textColor="#000"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Contact:+918305553009"
+                        android:textStyle="normal"
+                        android:gravity="center"
+                        android:textSize="20dp"
+                        android:textColor="#000"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Address:Shahid Bhagat Singh Road, Laxmi Ganj, Guna, Madhya Pradesh 473001"
                         android:textStyle="normal"
                         android:gravity="center"
                         android:textSize="20dp"

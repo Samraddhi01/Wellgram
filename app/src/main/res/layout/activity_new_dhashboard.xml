@@ -11,8 +11,8 @@
         android:layout_height="match_parent"
         android:layout_centerInParent="true"
         android:layout_marginHorizontal="10dp"
-        android:scrollIndicators="none"
-        android:layout_marginVertical="10dp">
+        android:layout_marginVertical="10dp"
+        android:scrollIndicators="none">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -70,9 +70,9 @@
                 android:layout_marginTop="30dp"
                 android:fontFamily="@font/inter_extrabold"
                 android:text="Find your Desired Doctor"
+                android:textAlignment="center"
                 android:textColor="#000"
-                android:textSize="30dp"
-                android:textAlignment="center"/>
+                android:textSize="30dp" />
 
             <ImageView
                 android:id="@+id/docImage"
@@ -88,159 +88,166 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/docImage"
                 android:layout_marginVertical="10dp"
-                android:textAlignment="center"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/inter_semibold"
                 android:text="Choose Category"
+                android:textAlignment="center"
                 android:textColor="#000"
                 android:textSize="28dp" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:orientation="horizontal" >
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                app:cardElevation="20dp"
-                app:cardCornerRadius="20dp"
-                android:layout_margin="5dp"
-                android:layout_height="wrap_content">
-                <LinearLayout
-                    android:id="@+id/medicinesButton"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:paddingHorizontal="25dp"
-                    android:paddingVertical="15dp"
-                    android:background="@drawable/card1_style"
-                    android:orientation="vertical">
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="20dp">
 
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:src="@drawable/heart"
-                        android:layout_height="wrap_content"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:text="heart\nsurgery"
-                        android:textStyle="bold"
+                    <LinearLayout
+                        android:id="@+id/medicinesButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/card1_style"
                         android:gravity="center"
-                        android:textSize="20dp"
-                        android:layout_marginTop="10dp"
-                        android:textColor="#000"
-                        android:layout_height="wrap_content"/>
+                        android:orientation="vertical"
+                        android:paddingHorizontal="25dp"
+                        android:paddingVertical="15dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/heart" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:text="Medicines"
+                            android:textColor="#000"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
 
 
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                app:cardElevation="20dp"
-                app:cardCornerRadius="20dp"
-                android:layout_margin="5dp"
-                android:layout_height="wrap_content">
-                <LinearLayout
-                    android:id="@+id/consultantButton"
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:paddingHorizontal="25dp"
-                    android:paddingVertical="15dp"
-                    android:background="@drawable/card2_style"
-                    android:orientation="vertical">
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="20dp">
 
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:src="@drawable/teeth"
-                        android:layout_height="wrap_content"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:text="teeth\nsurgery"
-                        android:textStyle="bold"
+                    <LinearLayout
+                        android:id="@+id/consultantButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/card2_style"
                         android:gravity="center"
-                        android:textSize="20dp"
-                        android:layout_marginTop="10dp"
-                        android:textColor="#000"
-                        android:layout_height="wrap_content"/>
+                        android:orientation="vertical"
+                        android:paddingHorizontal="25dp"
+                        android:paddingVertical="15dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/teeth" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:text="Doctors"
+                            android:textColor="#000"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
 
 
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                app:cardElevation="20dp"
-                app:cardCornerRadius="20dp"
-                android:layout_margin="5dp"
-                android:layout_height="wrap_content">
-                <LinearLayout
-                    android:id="@+id/blogButton"
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:paddingHorizontal="25dp"
-                    android:paddingVertical="15dp"
-                    android:background="@drawable/card1_style"
-                    android:orientation="vertical">
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="20dp">
 
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:src="@drawable/binoculars"
-                        android:layout_height="wrap_content"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:text="eye\nsurgery"
-                        android:textStyle="bold"
+                    <LinearLayout
+                        android:id="@+id/blogButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/card1_style"
                         android:gravity="center"
-                        android:textSize="20dp"
-                        android:layout_marginTop="10dp"
-                        android:textColor="#000"
-                        android:layout_height="wrap_content"/>
+                        android:orientation="vertical"
+                        android:paddingHorizontal="25dp"
+                        android:paddingVertical="15dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/binoculars" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:text="Blogs"
+                            android:textColor="#000"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
 
 
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
             </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
-                android:text="Top Doctor"
-                android:textSize="28dp"
-                android:textAlignment="center"
-                android:layout_marginTop="10dp"
-                android:textColor="#000"
-                android:fontFamily="@font/inter_semibold"
+                android:layout_height="wrap_content"
                 android:layout_marginHorizontal="10dp"
-                android:layout_height="wrap_content"/>
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_semibold"
+                android:text="Top Doctor"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="28dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
-                    app:cardElevation="5dp"
-                    app:cardCornerRadius="20dp"
+                    android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:layout_height="wrap_content">
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="5dp">
+
                     <LinearLayout
                         android:id="@+id/doctor1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:paddingHorizontal="20dp"
-                        android:paddingVertical="20dp"
                         android:background="#00D0B7B7"
-                        android:orientation="horizontal">
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="20dp"
+                        android:paddingVertical="20dp">
 
                         <ImageView
                             android:layout_width="50dp"
-                            android:src="@drawable/heart"
-                            android:layout_height="50dp"/>
+                            android:layout_height="50dp"
+                            android:src="@drawable/heart" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -250,44 +257,47 @@
 
                             <TextView
                                 android:layout_width="wrap_content"
-                                android:text="Dr. Parinita Khot Jain"
-                                android:textStyle="bold"
+                                android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:textSize="20dp"
+                                android:text="Dr. Parinita Khot Jain"
                                 android:textColor="#000"
-                                android:layout_height="wrap_content"/>
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
                             <TextView
                                 android:layout_width="wrap_content"
-                                android:text="Cardiology Doctor"
-                                android:textStyle="normal"
+                                android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:textSize="20dp"
+                                android:text="Gynaecologist"
                                 android:textColor="#000"
-                                android:layout_height="wrap_content"/>
+                                android:textSize="20dp"
+                                android:textStyle="normal" />
 
                         </LinearLayout>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
+
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
-                    app:cardElevation="5dp"
-                    app:cardCornerRadius="20dp"
+                    android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:layout_height="wrap_content">
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="5dp">
+
                     <LinearLayout
                         android:id="@+id/doctor2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:paddingHorizontal="20dp"
-                        android:paddingVertical="20dp"
                         android:background="#00D0B7B7"
-                        android:orientation="horizontal">
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="20dp"
+                        android:paddingVertical="20dp">
 
                         <ImageView
                             android:layout_width="50dp"
-                            android:src="@drawable/heart"
-                            android:layout_height="50dp"/>
+                            android:layout_height="50dp"
+                            android:src="@drawable/heart" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -297,44 +307,47 @@
 
                             <TextView
                                 android:layout_width="wrap_content"
-                                android:text="Dr. Nabin Dumre"
-                                android:textStyle="bold"
+                                android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:textSize="20dp"
+                                android:text="Dr. Subhash Sonkar"
                                 android:textColor="#000"
-                                android:layout_height="wrap_content"/>
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
                             <TextView
                                 android:layout_width="wrap_content"
-                                android:text="Cardiology Doctor"
-                                android:textStyle="normal"
+                                android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:textSize="20dp"
+                                android:text="General Physician"
                                 android:textColor="#000"
-                                android:layout_height="wrap_content"/>
+                                android:textSize="20dp"
+                                android:textStyle="normal" />
 
                         </LinearLayout>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
+
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
-                    app:cardElevation="5dp"
-                    app:cardCornerRadius="20dp"
+                    android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:layout_height="wrap_content">
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="5dp">
+
                     <LinearLayout
                         android:id="@+id/doctor3"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:paddingHorizontal="20dp"
-                        android:paddingVertical="20dp"
                         android:background="#00D0B7B7"
-                        android:orientation="horizontal">
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="20dp"
+                        android:paddingVertical="20dp">
 
                         <ImageView
                             android:layout_width="50dp"
-                            android:src="@drawable/heart"
-                            android:layout_height="50dp"/>
+                            android:layout_height="50dp"
+                            android:src="@drawable/heart" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -344,44 +357,47 @@
 
                             <TextView
                                 android:layout_width="wrap_content"
-                                android:text="Dr. Nabin Dumre"
-                                android:textStyle="bold"
+                                android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:textSize="20dp"
+                                android:text="Dr. Mukesh Upadhyaya"
                                 android:textColor="#000"
-                                android:layout_height="wrap_content"/>
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
                             <TextView
                                 android:layout_width="wrap_content"
-                                android:text="Cardiology Doctor"
-                                android:textStyle="normal"
+                                android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:textSize="20dp"
+                                android:text="General Medicine"
                                 android:textColor="#000"
-                                android:layout_height="wrap_content"/>
+                                android:textSize="20dp"
+                                android:textStyle="normal" />
 
                         </LinearLayout>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
+
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
-                    app:cardElevation="5dp"
-                    app:cardCornerRadius="20dp"
+                    android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:layout_height="wrap_content">
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="5dp">
+
                     <LinearLayout
                         android:id="@+id/doctor4"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:paddingHorizontal="20dp"
-                        android:paddingVertical="20dp"
                         android:background="#00D0B7B7"
-                        android:orientation="horizontal">
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="20dp"
+                        android:paddingVertical="20dp">
 
                         <ImageView
                             android:layout_width="50dp"
-                            android:src="@drawable/heart"
-                            android:layout_height="50dp"/>
+                            android:layout_height="50dp"
+                            android:src="@drawable/heart" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -391,44 +407,47 @@
 
                             <TextView
                                 android:layout_width="wrap_content"
-                                android:text="Dr. Nabin Dumre"
-                                android:textStyle="bold"
+                                android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:textSize="20dp"
+                                android:text="Dr. Ankit R Upadhyaya"
                                 android:textColor="#000"
-                                android:layout_height="wrap_content"/>
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
                             <TextView
                                 android:layout_width="wrap_content"
-                                android:text="Cardiology Doctor"
-                                android:textStyle="normal"
+                                android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:textSize="20dp"
+                                android:text="Endodontist"
                                 android:textColor="#000"
-                                android:layout_height="wrap_content"/>
+                                android:textSize="20dp"
+                                android:textStyle="normal" />
 
                         </LinearLayout>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
+
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
-                    app:cardElevation="5dp"
-                    app:cardCornerRadius="20dp"
+                    android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:layout_height="wrap_content">
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="5dp">
+
                     <LinearLayout
                         android:id="@+id/doctor5"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:paddingHorizontal="20dp"
-                        android:paddingVertical="20dp"
                         android:background="#00D0B7B7"
-                        android:orientation="horizontal">
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="20dp"
+                        android:paddingVertical="20dp">
 
                         <ImageView
                             android:layout_width="50dp"
-                            android:src="@drawable/heart"
-                            android:layout_height="50dp"/>
+                            android:layout_height="50dp"
+                            android:src="@drawable/heart" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -438,20 +457,21 @@
 
                             <TextView
                                 android:layout_width="wrap_content"
-                                android:text="Dr. Nabin Dumre"
-                                android:textStyle="bold"
+                                android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:textSize="20dp"
+                                android:text="Dr. Vivek Choubey"
                                 android:textColor="#000"
-                                android:layout_height="wrap_content"/>
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
                             <TextView
                                 android:layout_width="wrap_content"
-                                android:text="Cardiology Doctor"
-                                android:textStyle="normal"
+                                android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:textSize="20dp"
+                                android:text="Ayurvedic Practitioner"
                                 android:textColor="#000"
-                                android:layout_height="wrap_content"/>
+                                android:textSize="20dp"
+                                android:textStyle="normal" />
 
                         </LinearLayout>
                     </LinearLayout>
